@@ -1,3 +1,0 @@
-bind k "say /team 111; say /lock"
-
-bind f emote 2
