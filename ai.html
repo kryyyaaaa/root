@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>GPT</title>
-    <link rel="shortcut icon" href="img/sowwyz.ico" type="image/png">
 
     <style>
         body {
@@ -15,7 +14,6 @@
             height: 100vh;
             font-family: Arial, sans-serif;
         }
-        
         .snowflake {
             position: absolute;
             top: -10px;
@@ -35,16 +33,6 @@
                 transform: translateY(100vh) translateX(10vw);
             }
         }
-
-        a {
-            color: white;
-        }
-
-        a:link { text-decoration: none; }
-        a:visited { text-decoration: none; }
-        a:hover { text-decoration: none; }
-        a:active { text-decoration: none; }
-
         h1 {
             font-size: 60px;
             font-style: italic;
@@ -93,8 +81,7 @@
     </style>
 
     <body>
-        <h1><span><a href="https://github.com/kryyyaaaa/root/releases/download/AI/ai.zip">download</a></span></h1>
-        <!-- Telegram: @kryyaa -->
+        <h1><span onclick="playAudioAndRedirect()">download</span></h1>
 
         <script>
             function createSnowflake() {
@@ -110,7 +97,7 @@
                     snowflake.remove();
                 }, (parseFloat(snowflake.style.animationDuration) + parseFloat(snowflake.style.animationDelay)) * 1000);
             }
-
+            /* Sowwyz#1337 */
             setInterval(createSnowflake, 100);
 
             const title = document.querySelector('h1');
@@ -124,6 +111,12 @@
                 title.style.textShadow = '0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 160px white';
                 title.style.cursor = 'default';
             });
+            /* Sowwyz#1337 */
+            function playAudioAndRedirect() {
+                setTimeout(() => {
+                    window.location.href = "done.html";
+                }, 1000);
+            }
 
 
         </script>
